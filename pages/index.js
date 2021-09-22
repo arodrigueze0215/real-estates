@@ -6,7 +6,9 @@ export default function Home() {
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
+        <link href="http://fonts.cdnfonts.com/css/silka" rel="stylesheet"/>
       </Head>
+      <Navbar/>
 
       <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
         <h1 className="text-6xl font-bold">
