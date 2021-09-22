@@ -1,8 +1,13 @@
 import Head from 'next/head'
+import React from 'react'
+import HeadingHome from '../components/HeadingHome'
+import Navbar from '../components/Navbar'
+import RealStateItem from '../components/RealStateItem'
+import RealStateLayout from '../components/RealStateLayout'
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
+    <React.Fragment>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
@@ -10,11 +15,18 @@ export default function Home() {
       </Head>
       <Navbar/>
 
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          The will be here!!
-        </h1>
+      <main>
+        <HeadingHome/>
+        <RealStateLayout>
+          <RealStateItem/>
+          <RealStateItem/>
+          <RealStateItem/>
+          <RealStateItem/>
+          <RealStateItem/>
+          <RealStateItem/>
+          <RealStateItem/>
+        </RealStateLayout>
       </main>
-    </div>
+    </React.Fragment>
   )
 }
