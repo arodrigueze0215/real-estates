@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import React from 'react'
+import AddRealEstate from '../components/AddRealEstate'
 import HeadingHome from '../components/HeadingHome'
 import Navbar from '../components/Navbar'
 import RealStateItem from '../components/RealStateItem'
@@ -25,6 +26,7 @@ export default function Home({ data, included }) {
       attributes={item.attributes} 
       images={item.imagesMap}
     />)
+    realEstatesListComponents.push(<AddRealEstate key="000-addnew"/>)
   return (
     <React.Fragment>
       <Head>
