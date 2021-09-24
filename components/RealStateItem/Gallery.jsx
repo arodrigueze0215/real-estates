@@ -1,7 +1,7 @@
 import ImageContainer from './ImageContainer'
 import EmptyEstate from './EmptyEstate'
 import RealImage from './RealImage';
-const ImagesList = ({images}) => {
+const Gallery = ({images}) => {
     let imagesComponents;
     if (images.length === 0) {
         return (
@@ -50,4 +50,4 @@ const ImagesList = ({images}) => {
     
 }
 
-export default ImagesList;
+export default Gallery;
